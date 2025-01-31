@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - My Villa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo-villa.png" alt="Logo Villa" height="50"> My Villa
+        </a>
+    </div>
+</nav>
+
+<!-- FORM BOOKING -->
+<section class="container my-5 pt-5">
+    <h2 class="text-center">Formulir Booking</h2>
+    <form id="bookingForm">
+        <div class="mb-3">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="nama" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Nomor Telepon</label>
+            <input type="text" class="form-control" id="telepon" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Tipe Villa</label>
+            <select class="form-select" id="tipe_villa" required>
+                <option value="Villa Standard">Villa Standard - Rp 1.200.000 / malam</option>
+                <option value="Villa Deluxe">Villa Deluxe - Rp 2.000.000 / malam</option>
+                <option value="Villa Family">Villa Family - Rp 3.500.000 / malam</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Tanggal Check-in</label>
+            <input type="date" class="form-control" id="checkin" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Tanggal Check-out</label>
+            <input type="date" class="form-control" id="checkout" required>
+        </div>
+        <button type="button" class="btn btn-success w-100" onclick="kirimWhatsApp()">Kirim Booking via WhatsApp</button>
+    </form>
+</section>
+
+<script>
+function kirimWhatsApp() {
+    var nama = document.getElementById("nama").value;
+    var telepon = document.getElementById("telepon").value;
+    var tipe_villa = document.getElementById("tipe_villa").value;
+    var checkin = document.getElementById("checkin").value;
+    var checkout = document.getElementById("checkout").value;
+
+    // Validasi input
+    if (nama === "" || telepon === "" || checkin === "" || checkout === "") {
+        alert("Harap isi semua data!");
+        return;
+    }
+
+    // Membuat pesan WhatsApp
+    var pesan = "Halo, saya ingin booking villa:\n" +
+                "Nama: " + nama + "\n" +
+                "Telepon: " + telepon + "\n" +
+                "Tipe Villa: " + tipe_villa + "\n" +
+                "Check-in: " + checkin + "\n" +
+                "Check-out: " + checkout;
+
+    // Nomor WhatsApp Anda (Gantilah dengan nomor WhatsApp Anda)
+    var nomorWA = "+62895611972112";  // Ganti dengan nomor WhatsApp Anda
+    var linkWA = "https://wa.me/+62895611972112?text=" + encodeURIComponent(pesan);
+
+    // Mengarahkan ke WhatsApp
+    window.open(linkWA, "_blank");
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

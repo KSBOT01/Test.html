@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ini Villa Puncak</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 600px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://source.unsplash.com/random/1920x1080/?villa');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+        }
+
+        /* Fasilitas */
+        .facilities {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .facility-item {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .facility-item i {
+            font-size: 40px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<nav>
+            <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Villa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .navbar {
+            background: rgba(255, 255, 255, 0.95); /* Transparan Elegan */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand img {
+            height: 50px; /* Logo */
+        }
+        .nav-item img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+        .btn-book {
+            background: #ff9800;
+            color: white;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+        .btn-book:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.villa.jpg" alt="Logo Villa"> INI VILLA PUNCAK
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="villa.html"><i class="bi bi-building"></i> Villa
+                        <img src="villa-thumb.jpg" alt="Villa">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="facilities.html"><i class="bi bi-stars"></i> Facilities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-book" href="booking.html">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Ini Villa Puncak</h1>
+        <p>Experience premium comfort and nature</p>
+    </section>
+
+    <section class="facilities">
+        <div class="facility-item">
+            <i class="fas fa-swimming-pool"></i>
+            <h3>Swimming Pool</h3>
+            <p>Infinity pool with ocean view</p>
+        </div>
+        <div class="facility-item">
+            <i class="fas fa-wifi"></i>
+            <h3>High Speed WiFi</h3>
+            <p>Free high-speed internet access</p>
+        </div>
+        <div class="facility-item">
+            <i class="fas fa-spa"></i>
+            <h3>Spa Service</h3>
+            <p>Professional spa and massage</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <!-- Ganti sumber gambar dengan foto villa Anda -->
+        <img src="images/villa1.jpg" alt="Villa 1">
+        <img src="images/villa2.jpg" alt="Villa 2">
+        <img src="images/villa3.jpg" alt="Villa 3">
+        <img src="images/villa4.jpg" alt="villa 4">
+        <img src="interior1.jpg" alt="Interior 1">
+        <img src="pool.jpg" alt="Pool">
+        <img src="view.jpg" alt="View">
+    </section>
+
+    <footer>
+        <p>Contact us:</p>
+        <div style="margin: 20px 0;">
+            <i class="fas fa-phone"></i> +62895611972112 <br>
+            <i class="fas fa-envelope"></i> alfarizkisalman6@gmail.com<br>
+            <i class="fas fa-map-marker-alt"></i> Puncak, Bogor Indonesia
+        </div>
+    </footer>
+</body>
+</html>

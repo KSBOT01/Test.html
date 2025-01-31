@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas - Ini Villa</title>
+    <!-- Link ke FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link ke Bootstrap untuk tata letak responsif -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Styling gambar untuk membuat gambar lebih responsif */
+        .facility-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .facility-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .facility-card:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">My Villa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="villa.html">Villa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="facilities.html">Fasilitas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Fasilitas -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Fasilitas Kami</h2>
+    <div class="row">
+
+        <!-- Fasilitas 1: Kolam Renang -->
+        <div class="col-md-4">
+            <div class="facility-card">
+                <img src="path-to-your-image/pool.jpg" alt="Kolam Renang" class="facility-image mb-3">
+                <h4><i class="fas fa-pool"></i> Kolam Renang</h4>
+                <p>Nikmati kolam renang pribadi yang luas dan indah dengan pemandangan alam sekitar villa yang menenangkan.</p>
+            </div>
+        </div>
+
+        <!-- Fasilitas 2: Pemandangan -->
+        <div class="col-md-4">
+            <div class="facility-card">
+                <img src="path-to-your-image/restaurant.jpg" alt="Restoran" class="facility-image mb-3">
+                <h4><i class="fas fa-utensils"></i> Pemandangan</h4>
+                <p>Kami menyediakan restoran dengan berbagai pilihan menu, mulai dari masakan lokal hingga internasional, untuk memanjakan selera Anda.</p>
+            </div>
+        </div>
+
+        <!-- Fasilitas 3: Spa -->
+        <div class="col-md-4">
+            <div class="facility-card">
+                <img src="path-to-your-image/spa.jpg" alt="Spa" class="facility-image mb-3">
+                <h4><i class="fas fa-spa"></i> Spa</h4>
+                <p>Manjakan diri Anda dengan layanan spa eksklusif yang menyegarkan tubuh dan pikiran Anda setelah hari yang panjang.</p>
+            </div>
+        </div>
+
+        <!-- Fasilitas 4: Wi-Fi Gratis -->
+        <div class="col-md-4">
+            <div class="facility-card">
+                <img src="path-to-your-image/wifi.jpg" alt="Wi-Fi Gratis" class="facility-image mb-3">
+                <h4><i class="fas fa-wifi"></i> Wi-Fi Gratis</h4>
+                <p>Fasilitas Wi-Fi cepat di seluruh area villa, sehingga Anda dapat tetap terhubung dengan keluarga dan teman Anda.</p>
+            </div>
+        </div>
+
+        <!-- Fasilitas 5: Penyewaan Mobil -->
+        <div class="col-md-4">
+            <div class="facility-card">
+                <img src="path-to-your-image/car-rent.jpg" alt="Penyewaan Mobil" class="facility-image mb-3">
+                <h4><i class="fas fa-car"></i> Penyewaan Mobil</h4>
+                <p>Sewa mobil untuk mengeksplorasi daerah sekitar villa dengan lebih mudah dan nyaman.</p>
+            </div>
+        </div>
+
+        <!-- Fasilitas 6: Kamar Tidur Nyaman -->
+        <div class="col-md-4">
+            <div class="facility-card">
+                <img src="path-to-your-image/bedroom.jpg" alt="Kamar Tidur Nyaman" class="facility-image mb-3">
+                <h4><i class="fas fa-bed"></i> Kamar Tidur Nyaman</h4>
+                <p>Kamar tidur yang luas dan dilengkapi dengan fasilitas modern untuk memberikan kenyamanan terbaik selama menginap.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Ini Villa | All Rights Reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
